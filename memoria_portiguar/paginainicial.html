@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Memória Potiguar - Página Inicial</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #e9d0bd; /* fundo bege rosado */
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 80px;
+      height: 100%;
+      background-color: #4a2d1f; /* marrom escuro */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      margin: 20px 0;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-weight: bold;
+    }
+
+    .topbar {
+      background-color: #1e1e1e; /* preto */
+      color: white;
+      padding: 10px 20px;
+      margin-left: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .searchbar {
+      background-color: white;
+      border-radius: 20px;
+      padding: 5px 10px;
+    }
+
+    .searchbar input {
+      border: none;
+      outline: none;
+      font-family: 'Georgia', serif;
+    }
+
+    .container {
+      margin-left: 80px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #f4e3d3; /* bege claro do card */
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+
+    .card-inner {
+      background-color: white;
+      border-radius: 10px;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .card img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      margin-right: 15px;
+    }
+
+    .card-content {
+      max-width: 600px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #4d2c19;
+      font-size: 18px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #333;
+      text-align: justify;
+    }
+
+    @media(max-width: 768px) {
+      .card-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .card img {
+        margin-bottom: 10px;
+        margin-right: 0;
+        width: 100%;
+      }
+
+      .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .searchbar {
+        margin-top: 10px;
+        width: 100%;
+      }
+
+      .searchbar input {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <a href="#">INÍCIO</a>
+    <a href="#">SOBRE</a>
+    <a href="#">CONTATO</a>
+    <a href="#">SAIR</a>
+  </div>
+
+  <div class="topbar">
+    <span>MEMÓRIA POTIGUAR</span>
+    <div class="searchbar">
+      <input type="text" placeholder="Pesquisar...">
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="card">
+      <div class="card-inner">
+        <img src="recanto.jpg" alt="Recanto da Iapera">
+        <div class="card-content">
+          <h3>Recanto da Iapera</h3>
+          <p>
+            No Sítio Iapera, até 2006, o casarão era lugar de receber pessoas da família e amigos, com muita gente reunida em volta dos bancos e piores no alpendre. Com o falecimento de dona da casa, Francisca Hérica de Araújo, em 2006 e a ida do marido, Francisco das Chagas Bezerra, para a cidade, em 2010, o casarão foi fechado, mantendo as janelas e portas de madeira antigas com tramelas ainda originais. Mas em 2021, um dos filhos do casal, Tarcísio Vicente de Araújo, resolveu reunir a família e resgatar a história com esse aconchego.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner">
+        <img src="castelo.jpg" alt="Castelo do Engady">
+        <div class="card-content">
+          <h3>Castelo do Engady</h3>
+          <p>
+            Inaugurado em 1974 em Caicó, município localizado na região do Seridó, interior do Rio Grande do Norte, o Castelo do Engady esteve por várias décadas sob apoio, hoje vive em total abandono. Construído em arquitetura próxima ao estilo muro medieval, em uma área de 36 mil metros quadrados, o castelo foi construído sobre um lajedo, ou rochedo; tendo sua estrutura composta de pátios, terraços, pórticos, balcões, guaritas, torres, poços, escadas, baluartes, lagos, fortificações, ameias, salas, dormitórios, capela, dependências de serviços domésticos, vigias, muralhas e portões.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
